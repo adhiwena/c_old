@@ -86,7 +86,9 @@ _open_files_for_editing() {
 # Makes all aliases available in sudo mode
 alias sudo='sudo '
 # Neovim alias
-alias v='nvim'
+alias v=nvim
+# ls all without dots
+alias ll='ls -lAh'
 # Sudo edit text using default editor (alternative command: sudoedit)
 alias sv='sudo -e'
 # Windows clip equivalent in linux
