@@ -85,18 +85,20 @@ _open_files_for_editing() {
 # === Custom ===
 # Makes all aliases available in sudo mode
 alias sudo='sudo '
-# Neovim alias
-alias v=nvim
-# ls all without dots
-alias ll='ls -lAh --color=auto'
-# Sudo edit text using default editor (alternative command: sudoedit)
-alias sv='sudo -e'
+# List group directory first
+alias ls='ls --color --group-directories-first'
+# List all without dots, sort by size, group directory first
+alias ll='ls -lAhS --color --group-directories-first'
 # Windows clip equivalent in linux
 alias clip='xclip -sel clip'
+# Neovim alias
+alias v=nvim
+# Sudo edit text using default editor (alternative command: sudoedit)
+alias sv='sudo -e'
 # Chezmoi alias
 alias c=chezmoi
 # Edit, commit, and push dotfiles
-alias ce='chezmoi edit --apply'
+alias cv='chezmoi edit --apply'
 # Remove duplicate history 
 export HISTCONTROL=ignoreboth:erasedups
 
