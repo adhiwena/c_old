@@ -88,7 +88,7 @@ alias sudo='sudo '
 # Neovim alias
 alias v=nvim
 # ls all without dots
-alias ll='ls -lAh'
+alias ll='ls -lAh --color=auto'
 # Sudo edit text using default editor (alternative command: sudoedit)
 alias sv='sudo -e'
 # Windows clip equivalent in linux
