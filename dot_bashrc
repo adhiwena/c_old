@@ -1,7 +1,4 @@
-#
 # ~/.bashrc
-#
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -93,3 +90,6 @@ alias clip='xclip -sel clip'
 alias c='chezmoi'
 export HISTCONTROL=ignoreboth:erasedups
 
+
+# Chezmoi autocommit
+#
