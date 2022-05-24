@@ -86,9 +86,9 @@ _open_files_for_editing() {
 # Makes all aliases available in sudo mode
 alias sudo='sudo '
 # List group directory first
-alias ls='ls --color --group-directories-first'
+alias ls='ls -A --group-directories-first --color'
 # List all without dots, sort by size, group directory first
-alias ll='ls -lAhS --color --group-directories-first'
+alias ll='ls -lAh --group-directories-first --color'
 # Windows clip equivalent in linux
 alias clip='xclip -sel clip'
 # Neovim alias
