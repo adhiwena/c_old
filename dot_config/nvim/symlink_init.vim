@@ -1,1 +1,0 @@
-/home/adhiwena/.vimrc
