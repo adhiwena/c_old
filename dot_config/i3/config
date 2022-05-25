@@ -241,7 +241,7 @@ bindsym $mod+f fullscreen toggle
 #bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+#bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
 # bindsym $mod+space focus mode_toggle
@@ -610,6 +610,9 @@ for_window [class="SubtitleEdit"] move container to workspace $ws4, focus
 # Sign All Workspaces
 assign [all] $ws5
 for_window [all] focus
+
+# Tab rules for VM
+for_window [class="VirtualBox Manager" instance="VirtualBox Manager"] tabbed enable
 
 #####################################
 #		  Custom - Keybinds			#
