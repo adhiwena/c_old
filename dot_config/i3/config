@@ -343,7 +343,7 @@ for_window [class=TelegramDesktop] focus
 # For modifications, it can be copied to ~/.config/picom/picom.conf or ~/.config/picom.conf
 #
 # using default config 
-#exec_always --no-startup-id picom -b
+exec_always --no-startup-id picom -b
 #
 # for custom config:
 #exec_always --no-startup-id picom --config  ~/.config/picom.conf
@@ -584,7 +584,7 @@ set $i3l vstack to workspace $ws1
 set $i3l vstack to workspace $ws2
 set $i3l vstack to workspace $ws3
 set $i3l vstack to workspace $ws4
-#set $i3l vstack to workspace $ws5
+set $i3l vstack to workspace $ws5
 set $i3l vstack to workspace $ws6
 set $i3l vstack to workspace $ws7
 set $i3l vstack to workspace $ws8
@@ -612,8 +612,8 @@ assign [all] $ws5
 for_window [all] focus
 
 # Rules for VM
-for_window [class="VirtualBox Manager"] floating enable
-for_window [class="VirtualBox Machine"] fullscreen enable
+#for_window [class="VirtualBox Manager"] floating enable
+#for_window [class="VirtualBox Machine"] fullscreen enable
 
 #####################################
 #		  Custom - Keybinds			#
