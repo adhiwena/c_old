@@ -646,4 +646,4 @@ bindsym $mod+c exec /usr/bin/code
 # Task Manager (bpytop)
 bindsym $mod+Delete exec xfce4-terminal -x /usr/bin/bpytop
 
-bindsym $mod+p exec i3l swap container with previous
+#bindsym $mod+p exec i3l swap container with previous
