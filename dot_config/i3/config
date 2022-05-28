@@ -172,7 +172,6 @@ bindcode $mod+Shift+90 	 move container to workspace  $ws10
 ######################################
 
 # start a terminal
-#bindsym $mod+Return exec alacritty
 bindsym $mod+Return exec alacritty
 
 # kill focused window
@@ -604,11 +603,15 @@ smart_gaps on
 smart_borders on
 
 # Sign Workspace
-assign [class="Xed"] $ws1
+assign [class="Alacritty"] $ws1
 assign [class="Xed"] $ws1
 assign [class="Code"] $ws3
 assign [class="VirtualBox Machine"] $ws6
 for_window [class="SubtitleEdit"] move container to workspace $ws4, focus
+
+# Auto Focus
+for_window [class=Alacritty] focus
+for_window [class=Xed] focus
 
 # Sign All Workspaces
 assign [all] $ws5
