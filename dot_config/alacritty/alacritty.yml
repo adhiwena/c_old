@@ -30,19 +30,19 @@ colors:
 
 font:
   normal:
-    family: Arimo Nerd Font Mono
+    family: Arimo Nerd Font
     style: Regular
 
   bold:
-    family: Arimo Nerd Font Mono
+    family: Arimo Nerd Font
     style: Bold
 
   italic:
-    family: Arimo Nerd Font Mono
+    family: Arimo Nerd Font
     style: Italic
 
   bold_italic:
-    family: Arimo Nerd Font Mono
+    family: Arimo Nerd Font
     style: Bold Italic
 
   size: 12
