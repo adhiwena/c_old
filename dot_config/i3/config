@@ -612,6 +612,7 @@ for_window [class="SubtitleEdit"] move container to workspace $ws4, focus
 # Auto Focus
 for_window [class=Alacritty] focus
 for_window [class=Xed] focus
+for_window [class=Code] focus
 
 # Sign All Workspaces
 assign [all] $ws5
