@@ -112,6 +112,7 @@ alias clip='xclip -sel clip'
 alias v=nvim
 alias sv='sudo -e'
 alias at=alacritty-themes
+alias c=chezmoi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
