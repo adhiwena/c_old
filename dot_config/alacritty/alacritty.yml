@@ -30,19 +30,19 @@ colors:
 
 font:
   normal:
-    family: NotoSansDisplay Nerd Font Mono
+    family: Source Code Pro
     style: Regular
 
   bold:
-    family: NotoSansDisplay Nerd Font Mono
+    family: Source Code Pro
     style: Bold
 
   italic:
-    family: NotoSansDisplay Nerd Font Mono
+    family: Source Code Pro
     style: Italic
 
   bold_italic:
-    family: NotoSansDisplay Nerd Font Mono
+    family: Source Code Pro
     style: Bold Italic
 
   size: 10
