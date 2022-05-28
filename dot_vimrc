@@ -1,2 +1,12 @@
 set clipboard=unnamedplus
 set relativenumber
+
+call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
+
+if has('nvim')
+	Plugin 'tpope/vim-fugitive'
+else
+    " Standard vim specific commands
+endif
+
+call plug#end()
