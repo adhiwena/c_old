@@ -648,6 +648,6 @@ bindsym $mod+m exec amixer sset Master toggle && killall -USR1 i3blocks
 bindsym $mod+c exec /usr/bin/code
 
 # Task Manager (bpytop)
-bindsym $mod+Delete exec alacritty -x /usr/bin/bpytop
+bindsym $mod+Delete exec alacritty -e /usr/bin/bpytop
 
 #bindsym $mod+p exec i3l swap container with previous
