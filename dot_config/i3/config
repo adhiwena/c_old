@@ -424,7 +424,7 @@ bindsym $mod+t exec rofi -show window -config ~/.config/rofi/rofidmenu.rasi
 # exec_always i3-layouts
 exec_always --no-startup-id autotiling
 # exec ~/.config/i3/scripts/i3-switch-if-workspace-empty
-exec_always --no-startup-id ~/.config/polybar/launch.sh --shades --memory
+exec_always --no-startup-id ~/.config/polybar/launch.sh --blocks
 
 # Remove gaps if only one window
 # smart_gaps on
