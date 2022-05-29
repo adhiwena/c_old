@@ -1,3 +1,6 @@
 [user]
 	name = adhiwena
 	email = adhiwena@gmail.com
+[safe]
+	directory = /home/adhiwena/Data/Documents/Subtitles
+	directory = /home/adhiwena/Data/Documents/Scripts
