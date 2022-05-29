@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#########################################################
+# Custom Awe, increase decrease brighness using ddcutil #
+#########################################################
+
+cur=`ddcutil getvcp 10 | grep -o '[0-9]\{0,3\}' | sed -n '3p'`
+
+if [ `expr $cur % 6` -eq 0 ]; then
+  if [[ $@ == "inc" && $cur -lt 36 ]]; then
+    inc=`expr $cur + 6`
+    exec ddcutil setvcp 10 $inc &
+    echo `expr $inc / 6` from 6 \(+\)
+    exit 0
+  fi
+
+  if [[ $@ == "dec" && $cur -gt 6 ]]; then
+    dec=`expr $cur - 6`
+    exec ddcutil setvcp 10 $dec &
+    echo `expr $dec / 6` from 6 \(-\)
+    exit 0
+  fi
+fi
+
+echo `expr $cur / 6` from 6
