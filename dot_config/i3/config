@@ -379,25 +379,25 @@ client.urgent		        $urgentred $urgentred	$white $darkblue	$yellowbrown
 # bar settings (input comes from i3blocks) #
 ############################################
 
-bar {
-    font pango: NotoSansDisplay Nerd Font 12
-    status_command i3blocks -c ~/.config/i3/i3blocks.conf
-    position top
-    tray_output primary
-    tray_padding 0
-    strip_workspace_numbers yes
+# bar {
+    # font pango: NotoSansDisplay Nerd Font 12
+    # status_command i3blocks -c ~/.config/i3/i3blocks.conf
+    # position top
+    # tray_output primary
+    # tray_padding 0
+    # strip_workspace_numbers yes
 				
-    colors {
-        separator          $darkblue
-        background         $darkgrey
-        statusline         $white
-                         # border 		  bg		      txt		    indicator
-        focused_workspace  $mediumgrey	$grey		    $darkgrey	$lightblue
-        active_workspace	 $lightblue  	$mediumgrey	$darkgrey	$darkblue
-        inactive_workspace $darkgrey  	$darkgrey	  $grey 		$darkblue
-        urgent_workspace	 $urgentred		$urgentred	$white		$darkblue
-  }
-}
+    # colors {
+        # separator          $darkblue
+        # background         $darkgrey
+        # statusline         $white
+                         # # border 		  bg		      txt		    indicator
+        # focused_workspace  $mediumgrey	$grey		    $darkgrey	$lightblue
+        # active_workspace	 $lightblue  	$mediumgrey	$darkgrey	$darkblue
+        # inactive_workspace $darkgrey  	$darkgrey	  $grey 		$darkblue
+        # urgent_workspace	 $urgentred		$urgentred	$white		$darkblue
+  # }
+# }
 
 
 #####################################
@@ -423,11 +423,12 @@ bindsym $mod+t exec rofi -show window -config ~/.config/rofi/rofidmenu.rasi
 # Autorun
 # exec_always i3-layouts
 exec_always --no-startup-id autotiling
-exec ~/.config/i3/scripts/i3-switch-if-workspace-empty
+# exec ~/.config/i3/scripts/i3-switch-if-workspace-empty
+exec_always --no-startup-id ~/.config/polybar/launch.sh --shades --memory
 
 # Remove gaps if only one window
-smart_gaps on
-smart_borders on
+# smart_gaps on
+# smart_borders on
 
 # Sign Workspace
 assign [class="Alacritty"] $ws1
@@ -464,11 +465,14 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+w exec /usr/bin/firefox -url about:blank & xdotool search --sync --onlyvisible --class "Firefox" windowactivate key F6
 
 # Volume
-bindsym $mod+plus exec amixer -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks
-bindsym $mod+minus exec amixer -D pulse sset Master 5%- && pkill -RTMIN+1 i3blocks
+# bindsym $mod+plus exec amixer -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks
+# bindsym $mod+minus exec amixer -D pulse sset Master 5%- && pkill -RTMIN+1 i3blocks
+bindsym $mod+plus exec amixer -D pulse sset Master 5%+
+bindsym $mod+minus exec amixer -D pulse sset Master 5%-
 
 # Mute
-bindsym $mod+m exec amixer sset Master toggle && killall -USR1 i3blocks
+# bindsym $mod+m exec amixer sset Master toggle && killall -USR1 i3blocks
+bindsym $mod+m exec amixer sset Master toggle
 
 # Visual Studio Code
 bindsym $mod+c exec /usr/bin/code

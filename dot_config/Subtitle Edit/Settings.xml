@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Settings>
-  <Version>3.6.5.0</Version>
+  <Version>3.6.6.0</Version>
   <Compare>
     <ShowOnlyDifferences>False</ShowOnlyDifferences>
     <OnlyLookForDifferenceInText>True</OnlyLookForDifferenceInText>
@@ -378,11 +378,11 @@
     <RememberSelectedLine>True</RememberSelectedLine>
     <StartLoadLastFile>True</StartLoadLastFile>
     <StartRememberPositionAndSize>True</StartRememberPositionAndSize>
-    <StartPosition>0;28</StartPosition>
-    <StartSize>1928;1079</StartSize>
-    <SplitContainerMainSplitterDistance>632</SplitContainerMainSplitterDistance>
-    <SplitContainer1SplitterDistance>1424</SplitContainer1SplitterDistance>
-    <SplitContainerListViewAndTextSplitterDistance>394</SplitContainerListViewAndTextSplitterDistance>
+    <StartPosition>11;47</StartPosition>
+    <StartSize>1906;1049</StartSize>
+    <SplitContainerMainSplitterDistance>602</SplitContainerMainSplitterDistance>
+    <SplitContainer1SplitterDistance>1413</SplitContainer1SplitterDistance>
+    <SplitContainerListViewAndTextSplitterDistance>364</SplitContainerListViewAndTextSplitterDistance>
     <StartInSourceView>False</StartInSourceView>
     <RemoveBlankLinesWhenOpening>False</RemoveBlankLinesWhenOpening>
     <RemoveBadCharsWhenOpening>True</RemoveBadCharsWhenOpening>
@@ -486,7 +486,7 @@
     <RightToLeftMode>False</RightToLeftMode>
     <LastSaveAsFormat>SubRip</LastSaveAsFormat>
     <CheckForUpdates>True</CheckForUpdates>
-    <LastCheckForUpdates>2022-05-24</LastCheckForUpdates>
+    <LastCheckForUpdates>2022-05-29</LastCheckForUpdates>
     <AutoSave>False</AutoSave>
     <PreviewAssaText>ABCDEFGHIJKL abcdefghijkl 123</PreviewAssaText>
     <TagsInToggleHiTags>[;]</TagsInToggleHiTags>
@@ -501,12 +501,17 @@
     <TitleBarFullFileName>False</TitleBarFullFileName>
     <MeasurementConverterCloseOnInsert>True</MeasurementConverterCloseOnInsert>
     <MeasurementConverterCategories>Length;Kilometers;Meters</MeasurementConverterCategories>
+    <SubtitleTextBoxAutoVerticalScrollBars>False</SubtitleTextBoxAutoVerticalScrollBars>
     <SubtitleTextBoxMaxHeight>300</SubtitleTextBoxMaxHeight>
     <AllowLetterShortcutsInTextBox>False</AllowLetterShortcutsInTextBox>
     <LastColorPickerColor>#ffffff00</LastColorPickerColor>
     <LastColorPickerColor1>#ffff0000</LastColorPickerColor1>
     <LastColorPickerColor2>#ff008000</LastColorPickerColor2>
     <LastColorPickerColor3>#ff0000ff</LastColorPickerColor3>
+    <LastColorPickerColor4>#ffffffff</LastColorPickerColor4>
+    <LastColorPickerColor5>#ff000000</LastColorPickerColor5>
+    <LastColorPickerColor6>#ff00ffff</LastColorPickerColor6>
+    <LastColorPickerColor7>#ffff8c00</LastColorPickerColor7>
     <DarkThemeBackColor>-14803426</DarkThemeBackColor>
     <DarkThemeForeColor>-6579301</DarkThemeForeColor>
     <UseDarkTheme>False</UseDarkTheme>
@@ -570,6 +575,10 @@
     <Color2>Red</Color2>
     <Color3>Lime</Color3>
     <Color4>Cyan</Color4>
+    <Color5>Black</Color5>
+    <Color6>White</Color6>
+    <Color7>Orange</Color7>
+    <Color8>Pink</Color8>
     <ListViewShowColumnStartTime>True</ListViewShowColumnStartTime>
     <ListViewShowColumnEndTime>True</ListViewShowColumnEndTime>
     <ListViewShowColumnDuration>True</ListViewShowColumnDuration>
@@ -700,7 +709,8 @@
     <MusicSymbolStyle>Double</MusicSymbolStyle>
     <BinEditBackgroundColor>-16777216</BinEditBackgroundColor>
     <BinEditImageBackgroundColor>-16776961</BinEditImageBackgroundColor>
-    <BinEditVerticalMargin>10</BinEditVerticalMargin>
+    <BinEditTopMargin>10</BinEditTopMargin>
+    <BinEditBottomMargin>10</BinEditBottomMargin>
     <BinEditLeftMargin>10</BinEditLeftMargin>
     <BinEditRightMargin>10</BinEditRightMargin>
     <BridgeGapMilliseconds>100</BridgeGapMilliseconds>
@@ -1159,6 +1169,7 @@ $HorzAlign          =   Center
     <MainVideoReset>Control+D0</MainVideoReset>
     <MainVideoToggleBrightness />
     <MainVideoToggleContrast />
+    <MainVideoAudioToText />
     <MainSpellCheck>Control+Shift+S</MainSpellCheck>
     <MainSpellCheckFindDoubleWords>Control+Shift+D</MainSpellCheckFindDoubleWords>
     <MainSpellCheckAddWordToNames>Control+Shift+L</MainSpellCheckAddWordToNames>
@@ -1190,6 +1201,10 @@ $HorzAlign          =   Center
     <MainListViewColor2 />
     <MainListViewColor3 />
     <MainListViewColor4 />
+    <MainListViewColor5 />
+    <MainListViewColor6 />
+    <MainListViewColor7 />
+    <MainListViewColor8 />
     <MainRemoveFormatting />
     <MainListViewCopyText />
     <MainListViewCopyPlainText />
@@ -1220,6 +1235,7 @@ $HorzAlign          =   Center
     <GeneralApplyAssaOverrideTags />
     <GeneralSetAssaPosition />
     <GeneralSetAssaResolution />
+    <GeneralTakeAutoBackup />
     <MainListViewRemoveTimeCodes />
     <MainEditFixRTLViaUnicodeChars />
     <MainEditRemoveRTLUnicodeChars />
