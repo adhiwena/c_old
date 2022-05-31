@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Subtitle Edit
+Comment=An advanced subtitle editor and converter
+Exec=/home/adhiwena/Data/Documents/Scripts/Bash/subtitleedit.sh
+Icon=subtitleedit
+Terminal=false
+Type=Application
+Categories=Video;AudioVideo;AudioVideoEditing;
