@@ -456,7 +456,7 @@ for_window [all] focus
 bindsym $mod+s layout toggle split
 # n -> e
 # bindsym $mod+e exec /usr/bin/thunar
-bindsym $mod+e exec /usr/bin/ranger
+bindsym $mod+e exec alacritty -e /usr/bin/ranger
 
 # lock screen
 bindsym $mod+backslash exec ~/.config/i3/scripts/blur-lock
