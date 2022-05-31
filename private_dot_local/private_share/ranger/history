@@ -15,3 +15,6 @@ filter srt
 
 filter ass_
 filter
+search Arial
+rename ArialMT.ttf
+search Chalk
