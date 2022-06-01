@@ -1,0 +1,11 @@
+<NoBreakAfterList>
+  <Item>Dr</Item>
+  <Item>Dr.</Item>
+  <Item>Mr.</Item>
+  <Item>Mrs.</Item>
+  <Item>Ms.</Item>
+  <Item>Mt.</Item>
+  <Item>No.</Item>
+  <Item RegEx="True">[,.?!] ([^\s]+[,.?!])$</Item>
+  <Item RegEx="True">^([^\s]+[,.?!])</Item>
+</NoBreakAfterList>
